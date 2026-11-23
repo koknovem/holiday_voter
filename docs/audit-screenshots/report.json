@@ -1,0 +1,1307 @@
+{
+  "generatedAt": "2026-11-23T15:58:28.122Z",
+  "site": "https://holiday.brian-li.com",
+  "desktop": {
+    "label": "desktop",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "url": "https://holiday.brian-li.com",
+    "sections": [
+      {
+        "name": "create",
+        "file": "/opt/cursor/artifacts/holiday-voter-pw/desktop-section-create.png",
+        "box": {
+          "x": 0,
+          "y": 140,
+          "w": 1280,
+          "h": 660
+        }
+      },
+      {
+        "name": "how",
+        "file": "/opt/cursor/artifacts/holiday-voter-pw/desktop-section-how.png",
+        "box": {
+          "x": 88,
+          "y": 201,
+          "w": 672,
+          "h": 222
+        }
+      },
+      {
+        "name": "examples",
+        "file": "/opt/cursor/artifacts/holiday-voter-pw/desktop-section-examples.png",
+        "box": {
+          "x": 0,
+          "y": 291,
+          "w": 1280,
+          "h": 510
+        }
+      },
+      {
+        "name": "faq",
+        "file": "/opt/cursor/artifacts/holiday-voter-pw/desktop-section-faq.png",
+        "box": {
+          "x": 0,
+          "y": 300,
+          "w": 1280,
+          "h": 426
+        }
+      }
+    ],
+    "routes": [
+      {
+        "route": "/trip",
+        "status": 200,
+        "title": "Holiday Voter - Plan Trip Dates Together",
+        "blank": false,
+        "shot": "/opt/cursor/artifacts/holiday-voter-pw/desktop-route-_trip.png"
+      },
+      {
+        "route": "/trip/DEMO",
+        "status": 200,
+        "title": "Holiday Voter - Find the Perfect Holiday Dates",
+        "blank": true,
+        "shot": "/opt/cursor/artifacts/holiday-voter-pw/desktop-route-_trip_DEMO.png"
+      },
+      {
+        "route": "/trip/DEMO/albums",
+        "status": 200,
+        "title": "Holiday Voter - Find the Perfect Holiday Dates",
+        "blank": true,
+        "shot": "/opt/cursor/artifacts/holiday-voter-pw/desktop-route-_trip_DEMO_albums.png"
+      }
+    ],
+    "findings": [
+      {
+        "principle": "大きく",
+        "severity": "high",
+        "area": "Create",
+        "issue": "Primary CTA disabled/opaque while asking user to sign in elsewhere",
+        "evidence": {
+          "text": "Create Trip & Get Shareable Link",
+          "disabled": true,
+          "opacity": "0.5",
+          "fontSize": "14px",
+          "height": 48
+        }
+      },
+      {
+        "principle": "大きく",
+        "severity": "high",
+        "area": "Examples",
+        "issue": "Example title \"Friends weekend trip\" is only 14px — same tier as body",
+        "evidence": {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Friends weekend trip",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 224,
+          "h": 23,
+          "top": 1968,
+          "left": 88
+        }
+      },
+      {
+        "principle": "大きく",
+        "severity": "high",
+        "area": "Examples",
+        "issue": "Example title \"Team offsite planning\" is only 14px — same tier as body",
+        "evidence": {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Team offsite planning",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 224,
+          "h": 23,
+          "top": 2031,
+          "left": 88
+        }
+      },
+      {
+        "principle": "大きく",
+        "severity": "high",
+        "area": "Examples",
+        "issue": "Example title \"Family celebration\" is only 14px — same tier as body",
+        "evidence": {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Family celebration",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 224,
+          "h": 23,
+          "top": 2095,
+          "left": 88
+        }
+      },
+      {
+        "principle": "大きく",
+        "severity": "high",
+        "area": "Examples",
+        "issue": "Example title \"Travel with flexibility\" is only 14px — same tier as body",
+        "evidence": {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Travel with flexibility",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 224,
+          "h": 46,
+          "top": 2159,
+          "left": 88
+        }
+      },
+      {
+        "principle": "そろえる",
+        "severity": "med",
+        "area": "Page grid",
+        "issue": "Multiple content block widths — edges may not share one alignment rail",
+        "evidence": [
+          1280,
+          572,
+          1104
+        ]
+      }
+    ],
+    "fullPage": "/opt/cursor/artifacts/holiday-voter-pw/desktop-full.png",
+    "heroViewport": "/opt/cursor/artifacts/holiday-voter-pw/desktop-hero.png",
+    "typography": {
+      "h1": [],
+      "h2": [
+        {
+          "sel": "H2.font-display.text-3xl",
+          "text": "Create a New Trip",
+          "fontSize": "36px",
+          "fontWeight": "600",
+          "fontFamily": "Fraunces",
+          "w": 572,
+          "h": 40,
+          "top": 880,
+          "left": 88
+        },
+        {
+          "sel": "H2.font-display.text-3xl",
+          "text": "How it works",
+          "fontSize": "36px",
+          "fontWeight": "600",
+          "fontFamily": "Fraunces",
+          "w": 1104,
+          "h": 40,
+          "top": 1540,
+          "left": 88
+        },
+        {
+          "sel": "H2.font-display.text-3xl",
+          "text": "Examples",
+          "fontSize": "36px",
+          "fontWeight": "600",
+          "fontFamily": "Fraunces",
+          "w": 1104,
+          "h": 40,
+          "top": 1876,
+          "left": 88
+        },
+        {
+          "sel": "H2.font-display.text-3xl",
+          "text": "FAQ",
+          "fontSize": "36px",
+          "fontWeight": "600",
+          "fontFamily": "Fraunces",
+          "w": 1104,
+          "h": 40,
+          "top": 2385,
+          "left": 88
+        }
+      ],
+      "h3": [
+        {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Friends weekend trip",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 224,
+          "h": 23,
+          "top": 1968,
+          "left": 88
+        },
+        {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Team offsite planning",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 224,
+          "h": 23,
+          "top": 2031,
+          "left": 88
+        },
+        {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Family celebration",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 224,
+          "h": 23,
+          "top": 2095,
+          "left": 88
+        },
+        {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Travel with flexibility",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 224,
+          "h": 46,
+          "top": 2159,
+          "left": 88
+        }
+      ],
+      "buttons": [
+        {
+          "sel": "BUTTON.inline-flex.min-h-11",
+          "text": "Aa EN",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 79,
+          "h": 44,
+          "top": 14,
+          "left": 928
+        },
+        {
+          "sel": "BUTTON.inline-flex.min-h-11",
+          "text": "Sign in with Google",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "fontFamily": "Sora",
+          "w": 173,
+          "h": 44,
+          "top": 14,
+          "left": 1017
+        },
+        {
+          "sel": "A.inline-flex.items-center",
+          "text": "Plan a trip",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 111,
+          "h": 44,
+          "top": 571,
+          "left": 88
+        },
+        {
+          "sel": "A.inline-flex.items-center",
+          "text": "How it works",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 139,
+          "h": 46,
+          "top": 570,
+          "left": 211
+        },
+        {
+          "sel": "BUTTON.w-full.bg-ink",
+          "text": "Create Trip & Get Shareable Link",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 412,
+          "h": 48,
+          "top": 1303,
+          "left": 752
+        }
+      ],
+      "labels": [
+        {
+          "sel": "LABEL.mb-1.5.block",
+          "text": "TRIP NAME",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 412,
+          "h": 16,
+          "top": 968,
+          "left": 752
+        },
+        {
+          "sel": "LABEL.mb-1.5.block",
+          "text": "DESTINATION",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 412,
+          "h": 16,
+          "top": 1056,
+          "left": 752
+        },
+        {
+          "sel": "LABEL.block.text-xs",
+          "text": "",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 412,
+          "h": 60,
+          "top": 1205,
+          "left": 752
+        },
+        {
+          "sel": "LABEL.block.text-xs",
+          "text": "",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 200,
+          "h": 60,
+          "top": 1277,
+          "left": 752
+        },
+        {
+          "sel": "LABEL.block.text-xs",
+          "text": "",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 200,
+          "h": 60,
+          "top": 1277,
+          "left": 964
+        },
+        {
+          "sel": "LABEL.mb-1.5.block",
+          "text": "EARLIEST DATE",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 198,
+          "h": 16,
+          "top": 1213,
+          "left": 752
+        },
+        {
+          "sel": "LABEL.mb-1.5.block",
+          "text": "LATEST DATE",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 198,
+          "h": 16,
+          "top": 1213,
+          "left": 966
+        }
+      ],
+      "inputs": [
+        {
+          "sel": "INPUT.w-full.border",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 412,
+          "h": 46,
+          "top": 990,
+          "left": 752
+        },
+        {
+          "sel": "SELECT.w-full.border",
+          "text": "Choose a country Australia Canada China France Germany Hong Kong Italy Japan Net",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 412,
+          "h": 46,
+          "top": 1078,
+          "left": 752
+        },
+        {
+          "sel": "INPUT.mt-1.5.w-full",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 412,
+          "h": 38,
+          "top": 1227,
+          "left": 752
+        },
+        {
+          "sel": "INPUT.mt-1.5.w-full",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 200,
+          "h": 38,
+          "top": 1299,
+          "left": 752
+        },
+        {
+          "sel": "INPUT.mt-1.5.w-full",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 200,
+          "h": 38,
+          "top": 1299,
+          "left": 964
+        },
+        {
+          "sel": "INPUT.w-full.border",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 198,
+          "h": 48,
+          "top": 1235,
+          "left": 752
+        },
+        {
+          "sel": "INPUT.w-full.border",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 198,
+          "h": 48,
+          "top": 1235,
+          "left": 966
+        }
+      ]
+    },
+    "header": {
+      "w": 1280,
+      "h": 800,
+      "children": [
+        {
+          "text": "Holiday Voter",
+          "w": 133,
+          "h": 28,
+          "left": 88
+        },
+        {
+          "text": "Holiday Voter",
+          "w": 0,
+          "h": 0,
+          "left": 0
+        },
+        {
+          "text": "Holiday Voter",
+          "w": 133,
+          "h": 25,
+          "left": 88
+        },
+        {
+          "text": "Aa EN",
+          "w": 79,
+          "h": 44,
+          "left": 928
+        },
+        {
+          "text": "Aa",
+          "w": 14,
+          "h": 16,
+          "left": 939
+        },
+        {
+          "text": "EN",
+          "w": 17,
+          "h": 16,
+          "left": 959
+        },
+        {
+          "text": "Sign in with Google",
+          "w": 173,
+          "h": 44,
+          "left": 1017
+        },
+        {
+          "text": "Plan a trip",
+          "w": 111,
+          "h": 44,
+          "left": 88
+        },
+        {
+          "text": "How it works",
+          "w": 139,
+          "h": 46,
+          "left": 211
+        }
+      ]
+    },
+    "contentWidths": [
+      {
+        "tag": "MAIN",
+        "text": "Create a New Trip Create a suggested dat",
+        "maxWidth": "none",
+        "width": 1280,
+        "left": 0
+      },
+      {
+        "tag": "SECTION",
+        "text": "Create a New Trip Create a suggested dat",
+        "maxWidth": "none",
+        "width": 1280,
+        "left": 0
+      },
+      {
+        "tag": "H2",
+        "text": "Create a New Trip",
+        "maxWidth": "none",
+        "width": 572,
+        "left": 88
+      },
+      {
+        "tag": "FORM",
+        "text": "TRIP NAME DESTINATION Choose a country A",
+        "maxWidth": "none",
+        "width": 412,
+        "left": 752
+      },
+      {
+        "tag": "SECTION",
+        "text": "How it works 01 Create a trip and choose",
+        "maxWidth": "none",
+        "width": 1280,
+        "left": 0
+      },
+      {
+        "tag": "H2",
+        "text": "How it works",
+        "maxWidth": "none",
+        "width": 1104,
+        "left": 88
+      },
+      {
+        "tag": "SECTION",
+        "text": "Examples Friends weekend trip Propose Ja",
+        "maxWidth": "none",
+        "width": 1280,
+        "left": 0
+      },
+      {
+        "tag": "H2",
+        "text": "Examples",
+        "maxWidth": "none",
+        "width": 1104,
+        "left": 88
+      },
+      {
+        "tag": "SECTION",
+        "text": "FAQ Do we need accounts? Yes. Sign in wi",
+        "maxWidth": "none",
+        "width": 1280,
+        "left": 0
+      },
+      {
+        "tag": "H2",
+        "text": "FAQ",
+        "maxWidth": "none",
+        "width": 1104,
+        "left": 88
+      }
+    ],
+    "createCta": {
+      "text": "Create Trip & Get Shareable Link",
+      "disabled": true,
+      "opacity": "0.5",
+      "fontSize": "14px",
+      "height": 48
+    },
+    "copySignals": {
+      "hasCreateShareVote": false,
+      "howCount": 2,
+      "brandCount": 3,
+      "signInMentions": 3
+    }
+  },
+  "mobile": {
+    "label": "mobile",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "url": "https://holiday.brian-li.com",
+    "sections": [
+      {
+        "name": "create",
+        "file": "/opt/cursor/artifacts/holiday-voter-pw/mobile-section-create.png",
+        "box": {
+          "x": 0,
+          "y": 32,
+          "w": 390,
+          "h": 1042
+        }
+      },
+      {
+        "name": "how",
+        "file": "/opt/cursor/artifacts/holiday-voter-pw/mobile-section-how.png",
+        "box": {
+          "x": 16,
+          "y": 249,
+          "w": 358,
+          "h": 196
+        }
+      },
+      {
+        "name": "examples",
+        "file": "/opt/cursor/artifacts/holiday-voter-pw/mobile-section-examples.png",
+        "box": {
+          "x": 0,
+          "y": 139,
+          "w": 390,
+          "h": 706
+        }
+      },
+      {
+        "name": "faq",
+        "file": "/opt/cursor/artifacts/holiday-voter-pw/mobile-section-faq.png",
+        "box": {
+          "x": 0,
+          "y": 349,
+          "w": 390,
+          "h": 465
+        }
+      }
+    ],
+    "routes": [
+      {
+        "route": "/trip",
+        "status": 200,
+        "title": "Holiday Voter - Plan Trip Dates Together",
+        "blank": false,
+        "shot": "/opt/cursor/artifacts/holiday-voter-pw/mobile-route-_trip.png"
+      },
+      {
+        "route": "/trip/DEMO",
+        "status": 200,
+        "title": "Holiday Voter - Find the Perfect Holiday Dates",
+        "blank": true,
+        "shot": "/opt/cursor/artifacts/holiday-voter-pw/mobile-route-_trip_DEMO.png"
+      },
+      {
+        "route": "/trip/DEMO/albums",
+        "status": 200,
+        "title": "Holiday Voter - Find the Perfect Holiday Dates",
+        "blank": true,
+        "shot": "/opt/cursor/artifacts/holiday-voter-pw/mobile-route-_trip_DEMO_albums.png"
+      }
+    ],
+    "findings": [
+      {
+        "principle": "大きく",
+        "severity": "high",
+        "area": "Create",
+        "issue": "Primary CTA disabled/opaque while asking user to sign in elsewhere",
+        "evidence": {
+          "text": "Create Trip & Get Shareable Link",
+          "disabled": true,
+          "opacity": "0.5",
+          "fontSize": "14px",
+          "height": 48
+        }
+      },
+      {
+        "principle": "大きく",
+        "severity": "high",
+        "area": "Examples",
+        "issue": "Example title \"Friends weekend trip\" is only 14px — same tier as body",
+        "evidence": {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Friends weekend trip",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 358,
+          "h": 20,
+          "top": 2671,
+          "left": 16
+        }
+      },
+      {
+        "principle": "大きく",
+        "severity": "high",
+        "area": "Examples",
+        "issue": "Example title \"Team offsite planning\" is only 14px — same tier as body",
+        "evidence": {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Team offsite planning",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 358,
+          "h": 20,
+          "top": 2808,
+          "left": 16
+        }
+      },
+      {
+        "principle": "大きく",
+        "severity": "high",
+        "area": "Examples",
+        "issue": "Example title \"Family celebration\" is only 14px — same tier as body",
+        "evidence": {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Family celebration",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 358,
+          "h": 20,
+          "top": 2945,
+          "left": 16
+        }
+      },
+      {
+        "principle": "大きく",
+        "severity": "high",
+        "area": "Examples",
+        "issue": "Example title \"Travel with flexibility\" is only 14px — same tier as body",
+        "evidence": {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Travel with flexibility",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 358,
+          "h": 20,
+          "top": 3060,
+          "left": 16
+        }
+      },
+      {
+        "principle": "あける",
+        "severity": "high",
+        "area": "Mobile header",
+        "issue": "Header controls nearly fill viewport width; crowded",
+        "evidence": {
+          "totalW": 683,
+          "viewport": 390,
+          "children": [
+            {
+              "text": "Holiday Voter",
+              "w": 93,
+              "h": 20,
+              "left": 12
+            },
+            {
+              "text": "Holiday Voter",
+              "w": 93,
+              "h": 18,
+              "left": 12
+            },
+            {
+              "text": "Holiday Voter",
+              "w": 0,
+              "h": 0,
+              "left": 0
+            },
+            {
+              "text": "EN",
+              "w": 57,
+              "h": 44,
+              "left": 138
+            },
+            {
+              "text": "Aa",
+              "w": 0,
+              "h": 0,
+              "left": 0
+            },
+            {
+              "text": "EN",
+              "w": 17,
+              "h": 16,
+              "left": 149
+            },
+            {
+              "text": "Sign in with Google",
+              "w": 173,
+              "h": 44,
+              "left": 203
+            },
+            {
+              "text": "Plan a trip",
+              "w": 111,
+              "h": 44,
+              "left": 16
+            },
+            {
+              "text": "How it works",
+              "w": 139,
+              "h": 46,
+              "left": 139
+            }
+          ]
+        }
+      }
+    ],
+    "fullPage": "/opt/cursor/artifacts/holiday-voter-pw/mobile-full.png",
+    "heroViewport": "/opt/cursor/artifacts/holiday-voter-pw/mobile-hero.png",
+    "typography": {
+      "h1": [],
+      "h2": [
+        {
+          "sel": "H2.font-display.text-3xl",
+          "text": "Create a New Trip",
+          "fontSize": "30px",
+          "fontWeight": "600",
+          "fontFamily": "Fraunces",
+          "w": 358,
+          "h": 36,
+          "top": 900,
+          "left": 16
+        },
+        {
+          "sel": "H2.font-display.text-3xl",
+          "text": "How it works",
+          "fontSize": "30px",
+          "fontWeight": "600",
+          "fontFamily": "Fraunces",
+          "w": 358,
+          "h": 36,
+          "top": 1942,
+          "left": 16
+        },
+        {
+          "sel": "H2.font-display.text-3xl",
+          "text": "Examples",
+          "fontSize": "30px",
+          "fontWeight": "600",
+          "fontFamily": "Fraunces",
+          "w": 358,
+          "h": 36,
+          "top": 2583,
+          "left": 16
+        },
+        {
+          "sel": "H2.font-display.text-3xl",
+          "text": "FAQ",
+          "fontSize": "30px",
+          "fontWeight": "600",
+          "fontFamily": "Fraunces",
+          "w": 358,
+          "h": 36,
+          "top": 3289,
+          "left": 16
+        }
+      ],
+      "h3": [
+        {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Friends weekend trip",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 358,
+          "h": 20,
+          "top": 2671,
+          "left": 16
+        },
+        {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Team offsite planning",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 358,
+          "h": 20,
+          "top": 2808,
+          "left": 16
+        },
+        {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Family celebration",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 358,
+          "h": 20,
+          "top": 2945,
+          "left": 16
+        },
+        {
+          "sel": "H3.text-sm.font-semibold",
+          "text": "Travel with flexibility",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 358,
+          "h": 20,
+          "top": 3060,
+          "left": 16
+        }
+      ],
+      "buttons": [
+        {
+          "sel": "BUTTON.inline-flex.min-h-11",
+          "text": "EN",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 57,
+          "h": 44,
+          "top": 12,
+          "left": 138
+        },
+        {
+          "sel": "BUTTON.inline-flex.min-h-11",
+          "text": "Sign in with Google",
+          "fontSize": "14px",
+          "fontWeight": "500",
+          "fontFamily": "Sora",
+          "w": 173,
+          "h": 44,
+          "top": 12,
+          "left": 203
+        },
+        {
+          "sel": "A.inline-flex.items-center",
+          "text": "Plan a trip",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 111,
+          "h": 44,
+          "top": 711,
+          "left": 16
+        },
+        {
+          "sel": "A.inline-flex.items-center",
+          "text": "How it works",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 139,
+          "h": 46,
+          "top": 710,
+          "left": 139
+        },
+        {
+          "sel": "BUTTON.w-full.bg-ink",
+          "text": "Create Trip & Get Shareable Link",
+          "fontSize": "14px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 318,
+          "h": 48,
+          "top": 1761,
+          "left": 36
+        }
+      ],
+      "labels": [
+        {
+          "sel": "LABEL.mb-1.5.block",
+          "text": "TRIP NAME",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 318,
+          "h": 16,
+          "top": 1340,
+          "left": 36
+        },
+        {
+          "sel": "LABEL.mb-1.5.block",
+          "text": "DESTINATION",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 318,
+          "h": 16,
+          "top": 1428,
+          "left": 36
+        },
+        {
+          "sel": "LABEL.block.text-xs",
+          "text": "",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 318,
+          "h": 60,
+          "top": 1577,
+          "left": 36
+        },
+        {
+          "sel": "LABEL.block.text-xs",
+          "text": "",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 153,
+          "h": 60,
+          "top": 1649,
+          "left": 36
+        },
+        {
+          "sel": "LABEL.block.text-xs",
+          "text": "",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 153,
+          "h": 60,
+          "top": 1649,
+          "left": 201
+        },
+        {
+          "sel": "LABEL.mb-1.5.block",
+          "text": "EARLIEST DATE",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 318,
+          "h": 16,
+          "top": 1585,
+          "left": 36
+        },
+        {
+          "sel": "LABEL.mb-1.5.block",
+          "text": "LATEST DATE",
+          "fontSize": "12px",
+          "fontWeight": "600",
+          "fontFamily": "Sora",
+          "w": 318,
+          "h": 16,
+          "top": 1671,
+          "left": 36
+        }
+      ],
+      "inputs": [
+        {
+          "sel": "INPUT.w-full.border",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 318,
+          "h": 46,
+          "top": 1362,
+          "left": 36
+        },
+        {
+          "sel": "SELECT.w-full.border",
+          "text": "Choose a country Australia Canada China France Germany Hong Kong Italy Japan Net",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 318,
+          "h": 46,
+          "top": 1450,
+          "left": 36
+        },
+        {
+          "sel": "INPUT.mt-1.5.w-full",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 318,
+          "h": 38,
+          "top": 1599,
+          "left": 36
+        },
+        {
+          "sel": "INPUT.mt-1.5.w-full",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 153,
+          "h": 38,
+          "top": 1671,
+          "left": 36
+        },
+        {
+          "sel": "INPUT.mt-1.5.w-full",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 153,
+          "h": 38,
+          "top": 1671,
+          "left": 201
+        },
+        {
+          "sel": "INPUT.w-full.border",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 318,
+          "h": 48,
+          "top": 1607,
+          "left": 36
+        },
+        {
+          "sel": "INPUT.w-full.border",
+          "text": "",
+          "fontSize": "14px",
+          "fontWeight": "400",
+          "fontFamily": "Sora",
+          "w": 318,
+          "h": 48,
+          "top": 1693,
+          "left": 36
+        }
+      ]
+    },
+    "header": {
+      "w": 390,
+      "h": 844,
+      "children": [
+        {
+          "text": "Holiday Voter",
+          "w": 93,
+          "h": 20,
+          "left": 12
+        },
+        {
+          "text": "Holiday Voter",
+          "w": 93,
+          "h": 18,
+          "left": 12
+        },
+        {
+          "text": "Holiday Voter",
+          "w": 0,
+          "h": 0,
+          "left": 0
+        },
+        {
+          "text": "EN",
+          "w": 57,
+          "h": 44,
+          "left": 138
+        },
+        {
+          "text": "Aa",
+          "w": 0,
+          "h": 0,
+          "left": 0
+        },
+        {
+          "text": "EN",
+          "w": 17,
+          "h": 16,
+          "left": 149
+        },
+        {
+          "text": "Sign in with Google",
+          "w": 173,
+          "h": 44,
+          "left": 203
+        },
+        {
+          "text": "Plan a trip",
+          "w": 111,
+          "h": 44,
+          "left": 16
+        },
+        {
+          "text": "How it works",
+          "w": 139,
+          "h": 46,
+          "left": 139
+        }
+      ]
+    },
+    "contentWidths": [
+      {
+        "tag": "MAIN",
+        "text": "Create a New Trip Create a suggested dat",
+        "maxWidth": "none",
+        "width": 390,
+        "left": 0
+      },
+      {
+        "tag": "SECTION",
+        "text": "Create a New Trip Create a suggested dat",
+        "maxWidth": "none",
+        "width": 390,
+        "left": 0
+      },
+      {
+        "tag": "H2",
+        "text": "Create a New Trip",
+        "maxWidth": "none",
+        "width": 358,
+        "left": 16
+      },
+      {
+        "tag": "FORM",
+        "text": "TRIP NAME DESTINATION Choose a country A",
+        "maxWidth": "none",
+        "width": 318,
+        "left": 36
+      },
+      {
+        "tag": "SECTION",
+        "text": "How it works 01 Create a trip and choose",
+        "maxWidth": "none",
+        "width": 390,
+        "left": 0
+      },
+      {
+        "tag": "H2",
+        "text": "How it works",
+        "maxWidth": "none",
+        "width": 358,
+        "left": 16
+      },
+      {
+        "tag": "SECTION",
+        "text": "Examples Friends weekend trip Propose Ja",
+        "maxWidth": "none",
+        "width": 390,
+        "left": 0
+      },
+      {
+        "tag": "H2",
+        "text": "Examples",
+        "maxWidth": "none",
+        "width": 358,
+        "left": 16
+      },
+      {
+        "tag": "SECTION",
+        "text": "FAQ Do we need accounts? Yes. Sign in wi",
+        "maxWidth": "none",
+        "width": 390,
+        "left": 0
+      },
+      {
+        "tag": "H2",
+        "text": "FAQ",
+        "maxWidth": "none",
+        "width": 358,
+        "left": 16
+      }
+    ],
+    "createCta": {
+      "text": "Create Trip & Get Shareable Link",
+      "disabled": true,
+      "opacity": "0.5",
+      "fontSize": "14px",
+      "height": 48
+    },
+    "copySignals": {
+      "hasCreateShareVote": false,
+      "howCount": 2,
+      "brandCount": 3,
+      "signInMentions": 3
+    }
+  }
+}
