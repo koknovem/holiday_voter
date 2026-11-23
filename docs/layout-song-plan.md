@@ -1,67 +1,61 @@
-# NHK《排版之歌》網站改善計劃
+# Holiday Voter × NHK《排版之歌》改善計劃
 
-依據 NHK Eテレ《デザインあ》〈ならべうた／Layout Song〉四原則：
+**對象：** [https://holiday.brian-li.com](https://holiday.brian-li.com)（Holiday Voter）  
+**原則：** そろえる（對齊）／大きく（放大）／あける（留白）／わける（分隔）
 
-| 日文 | 中文 | 網站規則 |
-|------|------|----------|
-| そろえる | 對齊 | 同一左緣／欄位；唔好左右亂飄 |
-| 大きく | 放大 | 主標題／主 CTA 明顯大過次要資訊 |
-| あける | 留白 | 區塊之間留呼吸；唔好塞滿 |
-| わける | 分隔 | 狀態、動作、內容分組 |
+互動版：[Holiday Voter 排版計劃 Canvas](https://cursor.com/canvas/store-7eb9b862-6448-4180-8d52-d3b94179f1eb/cadb8fbe-fdc5-47d1-84c8-05b8f5583442)
 
 ## 現況
 
-- **holiday_voter**：只有 `README.md`，冇前端分頁可審計。
-- **可審計對象**：現有網站 [buy-stuffs](https://buy.brian-li.com)（群組協作 UI，結構接近未來 holiday voter）。
+| 項目 | 狀態 |
+|------|------|
+| Live 網站 | `holiday.brian-li.com` 有完整 SPA |
+| 本 repo `holiday_voter` | 只有 README（空殼）— **源碼未入 repo** |
+| Landing | 已實機審計（desktop 1280 + mobile 390） |
+| Trip 內頁 | 需 Google 登入；未登入深鏈因 nested asset path 會白屏 |
 
-互動版計劃：[NHK 排版之歌 · 網站改善計劃](https://cursor.com/canvas/store-7eb9b862-6448-4180-8d52-d3b94179f1eb/cadb8fbe-fdc5-47d1-84c8-05b8f5583442)
+## Landing 逐區審計
 
-## 逐頁審計（buy-stuffs）
+| 區塊 | 評分 | 問題 | 改善動作 |
+|------|------|------|----------|
+| Hero / Header | C+ | 品牌名出現兩次；雙 CTA 高度接近；手機 header 擠 | Hero 改價值主張；品牌只留 nav；主 CTA 加大；手機 Sign in 改 icon |
+| **Create a New Trip** | **D** | 左側 1-2-3 同 How it works 重複；disabled CTA +「sign in above」弱 | 只留一套步驟；卡內「Sign in with Google to create」；timezone 預設收合 |
+| How it works | C | 同 Create 步驟重複；區塊偏薄 | 合併或刪除；若留就加示意 UI |
+| Examples | C | 標題 14px 同正文一樣；長 gutter；像詞條 | 標題 18–20px；2×2 card |
+| FAQ + Footer | B- | FAQ 寬度同其他區唔齊；偏密 | 統一 max-width；footer 加連結 |
+| Mobile landing | C | logo+EN+完整 Google 掣擠爆；CTA 並排 | Sign in 縮短；CTA 直向 full-width |
 
-| Route | 評分 | 主要問題 | 改善動作 |
-|-------|------|----------|----------|
-| `/login` | B | 品牌夠大；eyebrow／Google 掣未成清晰對齊欄 | 品牌→說明→主 CTA 三段；弱化 sub |
-| `/nickname` | C | 兩 wide 掣並排層級唔清；emoji 代文字 | 確認唯一 primary；跳過改文字連結 |
-| `/` Home | C | 四段擠埋；刪除掣同 tile 錯位 | topbar 一條線；列表獨立加大間距 |
-| `/join` | B- | 輸入／動作留白不足；掃描區突兀 | 輸入→動作→掃描三段；掣加文字 |
-| `/trip/:id` | **D** | 頂欄堆疊；成員／QR／菜式／編輯混晒 | 頂欄只留返回+碼；編輯用 sheet |
-| `/trip/:id/add` | C+ | emoji grid 噪音；儲存／生成層級模糊 | 圖示收合；儲存唯一 primary |
+### Create 區（最高優先）
 
-### Trip 頁（優先）
+1. **わける** — Create 迷你步驟 vs How it works：全站只留一套  
+2. **大きく** — 未登入唔好用半透明 disabled；卡內直接主掣登入  
+3. **あける** — timezone／currency 預設收合；欄位間距 20–24px  
+4. **そろえる** — label 改 sentence case；同左欄共用內容寬
 
-**問題（わける 失敗）**
+## App 內頁藍圖（登入後）
 
-1. 頂欄同時：返回、邀請碼、同步、重置、加菜
-2. 菜式頭、AI 狀態、編輯、食材、行內面板垂直混疊
-3. `shop-item` 三欄旁再加編輯掣 → 對齊線斷裂
-
-**建議結構**
-
-1. **そろえる**：16px gutter；ListRow = `icon | 名稱 | avatar`；編輯改長按／滑出
-2. **大きく**：邀請碼／菜式名用 display；食材 body；meta 再細
-3. **あける**：菜式間 24px、食材間 8px、頂欄下 20px
-4. **わける**：A 邀請／成員（可摺）· B 清單（主）· C 編輯（sheet）
-
-## Holiday Voter 由零起藍圖
-
-| 頁面 | 單一任務 | 大きく | わける |
-|------|----------|--------|--------|
-| Landing / Login | 登入／了解 | 品牌名 | 品牌｜說明｜CTA |
-| Home | 睇／開投票 | 新投票 CTA | 進行中｜已結束 |
-| Create | 設日期選項 | 下一步 | 標題｜選項｜動作 |
-| Vote room | 投票／結果 | 勝出日期／進度 | 選項｜票數｜成員 |
-| Invite | 分享 | 邀請碼 | 碼｜QR｜複製 |
-| Result | 確認假期 | 確定日期 | 結果｜摘要｜分享 |
+| Route / 模組 | 排版重點 |
+|--------------|----------|
+| `/trip` My trips | 列表同「再建一個」分開；搜尋／legacy 收合 |
+| `/trip/:code` Trip room | Topbar + tabs；預設 Dates；其餘模組唔好一頁塞晒 |
+| Dates / Vote | 日曆＝主視覺；Participants／Share 用側欄或 sheet |
+| Itinerary | 日卡片列表；新增用 sheet |
+| Bookings | 列表｜新增分開；金額右對齊 |
+| Budget | 總額大きく；明細同 settlement 分兩區 |
+| Tasks / Notes | 單欄清單；新增 sheet |
+| `/albums` | 全寬媒體網格 |
+| `/audit-*` | 單一主視圖；下載歸頂欄 |
+| `/booking-import` | 上傳→預覽→確認 一步一屏 |
 
 ## 落地階段
 
-0. **決策**：改 buy-stuffs，定起 holiday_voter  
-1. **Layout Token**：gutter、space、type、tap  
-2. **全局殼層**：Topbar、PageHeader、Section、ListRow、PrimaryButton  
-3. **逐頁重排**：Trip → Home → Add → Join → Login  
-4. **驗收**：對齊線、字階、間距、三分開；375／390 實機  
+0. **源碼入 repo** — 將 Holiday Voter frontend push 入 `koknovem/holiday_voter`  
+1. **Layout Token** — gutter、content-max、space scale、type scale、CTA 層級  
+2. **Landing 重排** — 合併步驟、Create 登入 CTA、Hero、Examples、手機 header  
+3. **Trip room 殼層** — Topbar + tabs；Dates 為主  
+4. **深頁 + 驗收** — Albums／Audit／Import；修 nested route asset base；375／1280 檢查  
 
-## 下一步（請揀）
+## 下一步（請確認）
 
-- **A**：開 buy-stuffs branch，先收 Trip + Home  
-- **B**：喺 holiday_voter 用 Layout Token + 六頁藍圖由零起  
+1. 把 Holiday Voter **源碼**放進呢個 repo（或告訴我源碼喺邊）  
+2. 我跟 Phase 2 先改 **Landing**（唔使登入都可以驗收）
